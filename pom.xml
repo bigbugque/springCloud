@@ -58,7 +58,10 @@
     </properties>
 
     <!-- 子模块继承之后，提供作用：锁定版本+子modlue不用写groupId和version  -->
-    <!--dependencyManagement:通常会在一个组织或项目的最顶层的父pom中看到dependencyManagement元素。-->
+    <!--dependencyManagement:
+         通常会在一个组织或项目的最顶层的父pom中看到dependencyManagement元素。
+         - dependencyManagement在这里只声明依赖，并不实现引入
+    -->
     <dependencyManagement>
         <dependencies>
             <!--spring boot 2.2.2-->
